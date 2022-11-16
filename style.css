@@ -1,149 +1,31 @@
-html,
 body {
-  font-family: Helvetica, sans-serif;
-  font-size: 16px;
-  margin: 0;
-  background-color: white;
-}
-
-.navbar_background {
-  background-color: OrangeRed;
-}
-
-.container {
-  max-width: 960px;
-  margin: 0;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.logo {
-  display: inline-block;
-  margin: 0;
-}
-
-nav {
-  background-color: OrangeRed;
-  color: White;
-  padding: 0.75rem 1.25rem;
-}
-
-.main {
-  height: 30rem;
-  background-image: url("https://content.codecademy.com/courses/freelance-1/unit-5/tsunami-coffee/images/bg-photo.png");
-  background-repeat: no-repeat;
-  background-position: center;
-  /*background-attachment: fixed;*/
-  background-size: cover;
-}
-
-.main img {
-  width: 15rem;
-  display: block;
-  margin: auto;
-  /* margin-top: 5rem; */
-}
-
-ul {
-  list-style: none;
-  margin: 0;
-}
-
-li {
-  display: inline-block;
-}
-
-.supporting,
-.rating,
-.gallery,
-.location {
-  margin: 4em auto;
-}
-
-.supporting {
-  display: flex;
-  align-items: flex-start;
-  padding: 0 1rem;
-  height: 10%;
-  width: 90%;
-}
-
-.supporting img {
-  margin-right: 5%;
-}
-
-.rating {
-  background-color: OrangeRed;
-  height: 20rem;
-  padding: 0 1rem;
-  color: white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.rating h1 {
-  font-size: 2.5rem;
-}
-
-.gallery img {
-  display: block;
-  width: 30%;
-  margin: 1.5%;
-  float: left;
-}
-
-.clearfix {
-  clear: both;
-}
-
-.location {
-  text-align: center;
-  margin-bottom: 7rem;
-}
-
-.location img {
-  width: 100%;
-}
-
-footer {
-  background-color: OrangeRed;
-  padding: 0 1rem;
-}
-
-footer .container {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 5em 0;
-  color: white;
-}
-
-@media only screen and (max-width: 960px) {
-  .main {
-    padding-top: 0;
-  }
-}
-
-@media only screen and (max-width: 700px) {
-  .supporting img {
-    display: none;
-  }
-}
-
-@media only screen and (max-width: 470px) {
-  .rating h1 {
-    font-size: 2rem;
-  }
-  .gallery img {
-    display: block;
-    width: 100%;
     margin: 0;
-    float: left;
-  }
-  footer {
-    display: none;
-  }
+}
+
+.navbar__background {
+    background-color: lightblue;
+}
+
+.navbar {
+    display: flex;
+    align-items: center; /* Aliniere elemente */
+    justify-content: space-between; /* Spatiu intre elemente */
+    flex-grow: 1; /* La dimensiuni mici, navbarul se micsoreaza */
+    margin: 0 auto; /* Centrarea navbarului */
+    max-width: 800px; /* La dimensiuni mari ale ecranului, pastreaza max-width */
+    width: 80%; /* Ca sa fie mai smooth borderul */
+}
+
+.navbar .logo {
+    width: 135px;
+}
+
+.navbar__btns {
+    display: flex;
+    margin: 0;
+    padding: 0;
+} 
+
+.navbar__btns li {
+    list-style: none;
 }

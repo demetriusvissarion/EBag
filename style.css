@@ -1,31 +1,66 @@
 body {
-    margin: 0;
+  margin: 0;
 }
 
 .navbar__background {
-    background-color: lightblue;
+  background-color: lightblue;
 }
 
 .navbar {
-    display: flex;
-    align-items: center; /* Aliniere elemente */
-    justify-content: space-between; /* Spatiu intre elemente */
-    flex-grow: 1; /* La dimensiuni mici, navbarul se micsoreaza */
-    margin: 0 auto; /* Centrarea navbarului */
-    max-width: 800px; /* La dimensiuni mari ale ecranului, pastreaza max-width */
-    width: 80%; /* Ca sa fie mai smooth borderul */
+  display: flex;
+  align-items: center; /* Aliniere elemente */
+  justify-content: space-between; /* Spatiu intre elemente */
+  flex-grow: 1; /* La dimensiuni mici, navbarul se micsoreaza */
+  margin: 0 auto; /* Centrarea navbarului */
+  max-width: 800px; /* La dimensiuni mari ale ecranului, pastreaza max-width */
+  width: 80%; /* Ca sa fie mai smooth borderul */
 }
 
 .navbar .logo {
-    width: 135px;
+  width: 135px;
 }
 
 .navbar__btns {
-    display: flex;
-    margin: 0;
-    padding: 0;
-} 
+  display: flex;
+  margin: 0;
+  padding: 0;
+  justify-content: space-between; /* Spatiu intre elemente */
+}
 
-.navbar__btns li {
-    list-style: none;
+.navbar__btns button {
+  list-style: none;
+}
+
+button {
+  /* Reglat dimensiuni si forma butoane */
+  display: block;
+  padding: 5px 5px;
+  border-radius: 5px;
+}
+
+.footer {
+  position: fixed; /* Fixeaza tot jos */
+  bottom: 3rem; /* Lasa spatiu jos pentru textul de Copyright */
+  display: flex; /* Organizeaza coloanele */
+  justify-content: space-between; /* Spatiu intre elemente */
+  margin: 0 auto;
+}
+
+.footer_column {
+  float: left;
+  width: 25%;
+  margin: 0 auto;
+  align-items: center;
+  max-width: 800px;
+}
+
+.footer_column li {
+  list-style-type: none;
+}
+
+.copyright {
+  position: fixed; /* Fixeaza textul jos */
+  bottom: 0; /* Fixeaza textul jos */
+  text-align: center; /* Centreaza textul */
+  width: 100%; /* Centreaza textul */
 }

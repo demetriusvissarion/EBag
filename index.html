@@ -8,9 +8,9 @@
   </head>
 
   <body>
-    <!--Main navbar-->
+    <!--Main Navigation bar-->
     <div class="navbar__background">
-      <nav class="navbar">
+      <nav class="navbar container">
         <img src="/resources/logo.svg" class="logo" />
         <input type="text" placeholder="Search" />
         <ul class="navbar__btns">
@@ -29,40 +29,36 @@
 
     <!--Slider: Best recommended products-->
 
+    <div class="test-content">Dummy content, remove later. La asta ma refer cand zic ca o sa fie mutat footerul in jos atunci cand avem content aici.</div>
+
     <!--Footer-->
-    <footer class="footer">
-      <div class="footer_column">
-        <ul style="list-style-type: disc" style="list-style: none">
+    <footer class="footer"> <!-- footerul e cel mai din spate (aceeasi poveste ca si la main navbar); el trebuie sa ia toata linia ca sa putem sa centram blocul mare(footer__columns) format din coloanele footerului(footer__column) -->
+      <div class="footer__columns container"> <!-- container o sa il refolosim ca sa aliniem si centram restul contentului pe pagina -->
+        <ul class="footer__column">
           <li><strong>Customer Services</strong></li>
           <br />
           <li>Package opening</li>
           <li>Free return 30 days</li>
           <li>Monthly payment plans</li>
         </ul>
-      </div>
 
-      <div class="footer_column">
-        <ul style="list-style-type: disc">
+        <ul class="footer__column">
           <li><strong>Orders & Deliveries</strong></li>
           <br />
           <li>My Emag account</li>
           <li>Order deliveries</li>
           <li>Emag Corporate</li>
         </ul>
-      </div>
-
-      <div class="footer_column">
-        <ul style="list-style-type: disc">
+  
+        <ul class="footer__column">
           <li><strong>Customer Support</strong></li>
           <br />
           <li>Product return forms</li>
           <li>Contact</li>
           <li>Product recalls</li>
         </ul>
-      </div>
-
-      <div class="footer_column">
-        <ul style="list-style-type: disc">
+  
+        <ul class="footer__column">
           <li><strong>Emag.co.uk</strong></li>
           <br />
           <li>About Emag</li>

@@ -2,8 +2,20 @@ body {
   margin: 0;
 }
 
+/* Reusables */
+
+/* folosim clasa ca sa aliniem si centram tot contentul paginii de sus pana jos */
+.container {
+  margin: 0 auto; /* Centrarea blocului in mijlocul paginii */
+  max-width: 900px; /* La dimensiuni mari ale ecranului, pastreaza max-width */
+  width: 80%; /* Ca sa nu mai avem nevoie sa setam un padding fix */
+}
+
+/* ----- Main Navigation Bar ----- */
+
 .navbar__background {
   background-color: lightblue;
+  padding: 7px 0;
 }
 
 .navbar {
@@ -11,9 +23,6 @@ body {
   align-items: center; /* Aliniere elemente */
   justify-content: space-between; /* Spatiu intre elemente */
   flex-grow: 1; /* La dimensiuni mici, navbarul se micsoreaza */
-  margin: 0 auto; /* Centrarea navbarului */
-  max-width: 800px; /* La dimensiuni mari ale ecranului, pastreaza max-width */
-  width: 80%; /* Ca sa fie mai smooth borderul */
 }
 
 .navbar .logo {
@@ -38,25 +47,38 @@ button {
   border-radius: 5px;
 }
 
+/* ----- Content ----- */
+
+.test-content {
+  height: 1000px;
+  text-align: center;
+  line-height: 1000px;
+}
+
+/* ----- Footer ----- */
+
+/* Footerul o sa se dea in jos atunci cand avem content in pagina */
+
 .footer {
-  position: fixed; /* Fixeaza tot jos */
-  bottom: 3rem; /* Lasa spatiu jos pentru textul de Copyright */
-  display: flex; /* Organizeaza coloanele */
-  justify-content: space-between; /* Spatiu intre elemente */
-  margin: 0 auto;
+  background-color: lightgray;
+  padding: 2rem 0; /* Avem nevoie de spatiu doar sus si jos, in laterale avem deja */
 }
 
-.footer_column {
-  float: left;
-  width: 25%;
-  margin: 0 auto;
-  align-items: center;
-  max-width: 800px;
+.footer__columns {
+  display: flex; /* ca sa pot folosi justify */
+  justify-content: space-between; /* Ca sa am acelasi spatiu intre elemente(coloane) */
 }
 
-.footer_column li {
-  list-style-type: none;
+.footer__column {
+  list-style: none; /* Sa scapam de bullet points */
+  padding: 0; /* ul are padding default */
+  margin: 0; /* ul are margin default */
+  display: inline-block; /* Am facut coloanele sa fie blocuri, altfel le punea una sub alta si fiecare linie de text lua toata linia */
 }
+
+/* Copyright */
+
+/* Te las pe tine sa modifici aici si sa vezi care e problema */
 
 .copyright {
   position: fixed; /* Fixeaza textul jos */

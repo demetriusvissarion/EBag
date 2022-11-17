@@ -9,71 +9,57 @@
 
   <body>
     <form>
-      <div class="container">
-        <center><h1>Registration Form</h1></center>
-        <hr />
-
-        <label>Firstname</label>
-        <input
-          type="text"
-          name="firstname"
-          placeholder="Firstname"
-          size="15"
-          required
-        />
-        <br />
-        <br />
-        <label>Lastname</label>
-        <input
-          type="text"
-          name="firstname"
-          placeholder="Lastname"
-          size="15"
-          required
-        />
-        <br />
-        <br />
+      <span class="auth__heading">Sign up</span>
+      <div class="auth__input-pair">
+        <div>
+          <label>Enter your first name</label>
+          <input
+            type="text"
+            name="firstname"
+            required
+          />
+        </div>
+        <div>
+          <label>Enter your last name</label>
+          <input
+            type="text"
+            name="lastname"
+            required
+          />
+        </div>
       </div>
-
+      <label>Enter your email</label>
+      <input
+        type="text"
+        name="email"
+        required
+      />
       <label>Phone</label>
       <input
         type="text"
-        name="country code"
-        placeholder="Country Code"
-        value="+44"
-        size="10"
-      />
-      <br />
-      <input
-        type="text"
         name="phone"
-        placeholder="phone no."
-        size="10"
+        value="+40"
         required
       />
-
-      <textarea
-        cols="80"
-        rows="5"
-        placeholder="Current Address"
-        value="address"
-        required
-      ></textarea>
-
-      <label for="email"><b>Email</b></label>
-      <input type="text" placeholder="Enter Email" name="email" required />
-
-      <label for="psw"><b>Password</b></label>
-      <input type="password" placeholder="Enter Password" name="psw" required />
-
-      <label for="psw-repeat"><b>Re-type Password</b></label>
-      <input
-        type="password"
-        placeholder="Re-type Password"
-        name="psw-repeat"
-        required
-      />
-      <button type="submit" class="registerbtn">Register</button>
+      <div class="auth__input-pair">
+        <div>
+          <label>Password</label>
+          <input
+            type="text"
+            name="pw"
+            required
+          />
+        </div>
+        <div>
+          <label>Re-type password</label>
+          <input
+            type="text"
+            name="rtpw"
+            required
+          />
+        </div>
+      </div>
+      <button type="submit">Continue</button>
     </form>
   </body>
 </html>

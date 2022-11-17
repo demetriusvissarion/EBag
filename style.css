@@ -81,7 +81,7 @@ button {
 /* Te las pe tine sa modifici aici si sa vezi care e problema */
 
 .copyright {
-  position: fixed; /* Fixeaza textul jos */
+  /* position: fixed; Fixeaza textul jos */
   bottom: 0; /* Fixeaza textul jos */
   text-align: center; /* Centreaza textul */
   width: 100%; /* Centreaza textul */

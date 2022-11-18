@@ -8,18 +8,32 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
 }
 
-.auth {
+.auth__container {
   margin: 125px 0;
   width: 425px;
   background-color: white;
+  padding: 50px;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.05);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.auth__container button {
+  width: 100%;
+  border: none;
+  padding: 13px 20px;
+  border-radius: 50px;
+  font-size: 20px;
+}
+
+.auth {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 50px;
-  border-radius: 10px;
-  box-shadow: 0 0 30px rgba(0, 0, 0, 0.05);
 }
 
 .auth__heading {
@@ -27,6 +41,17 @@ body {
   font-family: Helvetica;
   font-size: 40px;
   color: rgb(145, 145, 145);
+}
+
+.auth__input-pair {
+  display: flex;
+  justify-content: space-between;
+}
+
+.auth__input-pair div {
+  width: 45%;
+  display: flex;
+  flex-direction: column;
 }
 
 .auth label {
@@ -46,33 +71,9 @@ body {
   width: 100%;
 }
 
-.auth__input-pair {
-  display: flex;
-  justify-content: space-between;
-}
-
-.auth__input-pair div {
-  width: 45%;
-  display: flex;
-  flex-direction: column;
-}
-
-.auth button {
-  width: 100%;
-  border: none;
-  padding: 13px 20px;
-  border-radius: 50px;
-  font-size: 20px;
-}
-
 .auth__btn--continue {
   margin-top: 10px;
   background-color: rgb(56, 101, 247);
-  color: white;
-}
-
-.auth__btn--signin {
-  background-color: rgb(50, 50, 50);
   color: white;
 }
 
@@ -90,4 +91,17 @@ body {
   margin: auto 0;
   border-color: rgb(201, 200, 200);
   border-top: 0;
+}
+
+.auth__btn--signin {
+  background-color: rgb(50, 50, 50);
+  color: white;
+}
+
+.auth__btn--continue:hover {
+  background-color: rgb(48, 86, 210);
+}
+
+.auth__btn--signin:hover {
+  background-color: rgb(30, 30, 30);
 }

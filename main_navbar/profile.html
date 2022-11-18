@@ -8,64 +8,66 @@
   </head>
 
   <body>
-    <form class="auth">
-      <span class="auth__heading">Sign up</span>
-      <div class="auth__input-pair">
-        <div>
-          <label>Enter your first name</label>
-          <input
-            type="text"
-            name="firstname"
-            required
-          />
+    <div class="auth__container">
+      <form class="auth">
+        <span class="auth__heading">Sign up</span>
+        <div class="auth__input-pair">
+          <div>
+            <label>Enter your first name</label>
+            <input
+              type="text"
+              name="firstname"
+              required
+            />
+          </div>
+          <div>
+            <label>Enter your last name</label>
+            <input
+              type="text"
+              name="lastname"
+              required
+            />
+          </div>
         </div>
-        <div>
-          <label>Enter your last name</label>
-          <input
-            type="text"
-            name="lastname"
-            required
-          />
+        <label>Enter your email</label>
+        <input
+          type="text"
+          name="email"
+          required
+        />
+        <label>Phone</label>
+        <input
+          type="text"
+          name="phone"
+          value="+40"
+          required
+        />
+        <div class="auth__input-pair">
+          <div>
+            <label>Password</label>
+            <input
+              type="text"
+              name="pw"
+              required
+            />
+          </div>
+          <div>
+            <label>Re-type password</label>
+            <input
+              type="text"
+              name="rtpw"
+              required
+            />
+          </div>
         </div>
-      </div>
-      <label>Enter your email</label>
-      <input
-        type="text"
-        name="email"
-        required
-      />
-      <label>Phone</label>
-      <input
-        type="text"
-        name="phone"
-        value="+40"
-        required
-      />
-      <div class="auth__input-pair">
-        <div>
-          <label>Password</label>
-          <input
-            type="text"
-            name="pw"
-            required
-          />
-        </div>
-        <div>
-          <label>Re-type password</label>
-          <input
-            type="text"
-            name="rtpw"
-            required
-          />
-        </div>
-      </div>
-      <button class="auth__btn--continue" type="submit">Continue</button>
+        <button class="auth__btn--continue" type="submit">Continue</button>
+      </form>
       <div class="auth__separator">
         <hr>
         <span>or</span>
         <hr>
       </div>
       <button class="auth__btn--signin">Sign in</button>
-    </form>
+    </div>
   </body>
 </html>

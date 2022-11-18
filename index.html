@@ -17,12 +17,18 @@
           <!-- <script src="/main_navbar/profile.js"></script> -->
 
           <!-- Linkul catre Registration Form e integrat in butonul Profile-->
-          <button
-            type="button"
-            onclick="document.location='/Main_navbar/profile.html'"
-          >
-            Profile
-          </button>
+          <div class="profile_dropdown">
+            <button type="button" class="profile_main_button">Profile</button>
+            <div class="profile_dropdown_content">
+              <button
+                type="button"
+                onclick="document.location='/Main_navbar/profile.html'"
+              >
+                Sign up
+              </button>
+              <button type="button">Log in</button>
+            </div>
+          </div>
           <button type="button">Favourites</button>
           <button type="button">Basket</button>
         </ul>
@@ -32,7 +38,13 @@
     <!--Banner-->
 
     <!--Left navbar-->
-    <!--Product categories-->
+    <div>
+      <iframe
+        class="left_navbar"
+        src="/left_navbar/left_navbar.html"
+        title="Left Navbar"
+      ></iframe>
+    </div>
 
     <!--Slider: Best selling products-->
 

@@ -7,7 +7,7 @@ body {
 /* folosim clasa ca sa aliniem si centram tot contentul paginii de sus pana jos */
 .container {
   margin: 0 auto; /* Centrarea blocului in mijlocul paginii */
-  max-width: 900px; /* La dimensiuni mari ale ecranului, pastreaza max-width */
+  max-width: 1500px; /* La dimensiuni mari ale ecranului, pastreaza max-width */
   width: 80%; /* Ca sa nu mai avem nevoie sa setam un padding fix */
 }
 
@@ -38,13 +38,6 @@ body {
 
 .navbar__btns button {
   list-style: none;
-}
-
-button {
-  /* Reglat dimensiuni si forma butoane */
-  display: block;
-  padding: 5px 5px;
-  border-radius: 5px;
 }
 
 /* ----- Content ----- */
@@ -78,11 +71,64 @@ button {
 
 /* Copyright */
 
-/* Te las pe tine sa modifici aici si sa vezi care e problema */
-
 .copyright {
   /* position: fixed; Fixeaza textul jos */
   bottom: 0; /* Fixeaza textul jos */
   text-align: center; /* Centreaza textul */
   width: 100%; /* Centreaza textul */
+}
+
+/* Profile*/
+
+/* Profile button*/
+.profile_main_button {
+  background-color: #04aa6d;
+  color: white;
+  padding: 0.5rem;
+  font-size: 1rem;
+  border: none;
+}
+
+/* Profile dropdown div*/
+.profile_dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Profile dropdown content div*/
+.profile_dropdown_content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  /* min-width: 160px; */
+  box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+/* Buttons inside the dropdown*/
+.profile_dropdown_content button {
+  color: black;
+  padding: 0 2rem;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown buttons on hover */
+.profile_dropdown_content button:hover {
+  background-color: #ddd;
+}
+
+/* Show the dropdown menu on hover */
+.profile_dropdown:hover .profile_dropdown_content {
+  display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.profile_dropdown:hover .profile_main_button {
+  background-color: #3e8e41;
+}
+
+/* Left navbar */
+.left_navbar {
+  height: 600px;
 }

@@ -1,5 +1,4 @@
 /*
-  TODO: Input Register: Password, Re-type Password
   TODO: Input Login: Email, Password
 */
 
@@ -11,7 +10,7 @@ body {
   justify-content: center;
 }
 
-form {
+.auth {
   margin: 125px 0;
   width: 425px;
   background-color: white;
@@ -24,18 +23,18 @@ form {
 }
 
 .auth__heading {
-  padding: 30px 0;
+  padding-bottom: 60px;
   font-family: Helvetica;
-  font-size: 35px;
+  font-size: 40px;
   color: rgb(145, 145, 145);
 }
 
-label {
+.auth label {
   font-family: Roboto;
   font-size: 19px;
 }
 
-input {
+.auth input {
   font-size: 20px;
   margin-top: 10px;
   margin-bottom: 25px;
@@ -58,14 +57,37 @@ input {
   flex-direction: column;
 }
 
-button {
-  margin-top: 10px;
-  margin-bottom: 30px;
+.auth button {
   width: 100%;
   border: none;
   padding: 13px 20px;
-  font-size: 20px;
   border-radius: 50px;
+  font-size: 20px;
+}
+
+.auth__btn--continue {
+  margin-top: 10px;
   background-color: rgb(56, 101, 247);
   color: white;
+}
+
+.auth__btn--signin {
+  background-color: rgb(50, 50, 50);
+  color: white;
+}
+
+.auth__separator {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  font-size: 18px;
+  color: rgb(150, 150, 150);
+  margin: 30px 0;
+}
+
+.auth__separator hr {
+  width: 45%;
+  margin: auto 0;
+  border-color: rgb(201, 200, 200);
+  border-top: 0;
 }

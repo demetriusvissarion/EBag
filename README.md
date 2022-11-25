@@ -1,6 +1,6 @@
 # Main idea
 
-An Emag copy
+Build an e-Commerce site similar to Emag
 
 # Specifications
 

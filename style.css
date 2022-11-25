@@ -129,6 +129,82 @@ body {
 }
 
 /* Left navbar */
+.left_navbar_container {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
 .left_navbar {
   height: 600px;
+}
+
+.sliderBar1-inner h3 {
+  color: #000000;
+}
+
+.sliderBar1-wrap {
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 10%;
+  left: 350px;
+  width: 50%;
+  height: 300px;
+  border: 1px solid black;
+  cursor: grab;
+}
+
+.sliderBar1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  overflow: scroll;
+}
+
+.sliderBar1::-webkit-scrollbar {
+  display: none;
+}
+
+.sliderBar1-inner {
+  position: absolute;
+  display: flex;
+  justify-content: space-around;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 3000px;
+}
+
+.sliderBar1-item {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 250px;
+  height: 98%;
+  top: 1%;
+  border: 1px solid #000000;
+  background-color: #d3d2d2;
+}
+
+.sliderBar1-progress-bar {
+  position: absolute;
+  bottom: -20px;
+  left: 0;
+  width: 100%;
+  height: 10px;
+  border: 1px solid #000000;
+  border-radius: 10px;
+}
+
+.sliderBar1-prog-bar-inner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  background-color: #383838;
 }

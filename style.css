@@ -14,8 +14,8 @@ body {
 /* ----- Main Navigation Bar ----- */
 
 .navbar__background {
-  background-color: lightblue;
-  padding: 7px 0;
+  background-color: rgb(255, 255, 255);
+  padding: 15px 0;
 }
 
 .navbar {
@@ -26,7 +26,16 @@ body {
 }
 
 .navbar .logo {
-  width: 135px;
+  width: 175px;
+}
+
+.navbar input {
+  padding: 13px 15px;
+  width: 60%;
+  border-radius: 50px;
+  border-style: solid;
+  border-color: rgb(0, 98, 255);
+  font-size: 18px;
 }
 
 .navbar__btns {
@@ -34,10 +43,17 @@ body {
   margin: 0;
   padding: 0;
   justify-content: space-between; /* Spatiu intre elemente */
+  align-items: center;
 }
 
 .navbar__btns button {
   list-style: none;
+}
+
+.navbar__btns .favorite,
+.navbar__btns .basket {
+  display: flex;
+  padding-left: 10px;
 }
 
 /* ----- Content ----- */
@@ -72,10 +88,10 @@ body {
 /* Copyright */
 
 .copyright {
-  /* position: fixed; Fixeaza textul jos */
-  bottom: 0; /* Fixeaza textul jos */
   text-align: center; /* Centreaza textul */
-  width: 100%; /* Centreaza textul */
+  margin: 0;
+  background-color: #c4c4c4;
+  color: rgb(4, 4, 4);
 }
 
 /* Profile*/

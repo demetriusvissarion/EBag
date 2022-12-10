@@ -1,9 +1,25 @@
 body {
   margin: 0;
-  background-color: #f8f8ff;
+  background-color: #cdcde9;
 }
 
 /* Reusables */
+
+/* winter snowfleakes effect, to comment out after winter */
+.fa-snowflake {
+  animation: fall 10s linear forwards;
+  color: white;
+  position: absolute;
+  top: -20px;
+
+  z-index: 999;
+}
+
+@keyframes fall {
+  to {
+    transform: translateY(105vh);
+  }
+}
 
 /* folosim clasa ca sa aliniem si centram tot contentul paginii de sus pana jos */
 .container {
@@ -15,7 +31,7 @@ body {
 /* ----- Main Navigation Bar ----- */
 
 .navbar__background {
-  background-color: rgb(255, 255, 255);
+  background-color: rgb(183, 241, 241);
   padding: 15px 0;
 }
 
@@ -39,6 +55,7 @@ body {
   border-style: solid;
   border-color: rgb(0, 98, 255);
   font-size: 18px;
+  cursor: pointer;
 }
 
 .navbar__btns {
@@ -51,12 +68,14 @@ body {
 
 .navbar__btns button {
   list-style: none;
+  cursor: pointer;
 }
 
 .navbar__btns .favorite,
 .navbar__btns .basket {
   display: flex;
   padding-left: 10px;
+  cursor: pointer;
 }
 
 /* ----- Content ----- */
@@ -144,7 +163,7 @@ body {
 
 /* Change the background color of the dropdown button when the dropdown content is shown */
 .profile_dropdown:hover .profile_main_button {
-  background-color: #3e8e41;
+  background-color: #9deda0;
 }
 
 /* First section */
@@ -155,7 +174,7 @@ body {
 
 /* Left navbar */
 .left_navbar {
-  background-color: white;
+  background-color: rgb(155, 240, 230);
   font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -186,8 +205,12 @@ body {
   text-align: center;
   font-size: 2rem;
   /* ^^^ temp ^^^ */
+  /* width: 100%; */
+  /* background-color: rgb(58, 58, 58); */
+}
+
+.banner .img img {
   width: 100%;
-  background-color: rgb(58, 58, 58);
 }
 
 /* Slider: Best selling products */
@@ -224,7 +247,7 @@ body {
   height: 98%;
   top: 1%;
   border: 1px solid #000000;
-  background-color: #d3d2d2;
+  background-color: #9cf1f3;
 }
 
 .sliderBar1-progress-bar {

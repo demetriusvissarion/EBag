@@ -1,0 +1,6 @@
+/* folosim clasa ca sa aliniem si centram tot contentul paginii de sus pana jos */
+.container {
+  margin: 0 auto; /* Centrarea blocului in mijlocul paginii */
+  max-width: 1500px; /* La dimensiuni mari ale ecranului, pastreaza max-width */
+  width: 80%; /* Ca sa nu mai avem nevoie sa setam un padding fix */
+}

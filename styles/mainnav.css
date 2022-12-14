@@ -1,0 +1,49 @@
+/* ----- Main Navigation Bar ----- */
+
+.navbar__background {
+  background-color: rgb(183, 241, 241);
+  padding: 15px 0;
+}
+
+.navbar {
+  display: flex;
+  align-items: center; /* Aliniere elemente */
+  justify-content: space-between; /* Spatiu intre elemente */
+  flex-grow: 1; /* La dimensiuni mici, navbarul se micsoreaza */
+}
+
+.navbar .logo {
+  width: 175px;
+  margin-left: 50px;
+}
+
+.navbar input {
+  margin: 0 30px;
+  padding: 13px 15px;
+  width: 60%;
+  border-radius: 50px;
+  border-style: solid;
+  border-color: rgb(0, 98, 255);
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.navbar__btns {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  justify-content: space-between; /* Spatiu intre elemente */
+  align-items: center;
+}
+
+.navbar__btns button {
+  list-style: none;
+  cursor: pointer;
+}
+
+.navbar__btns .favorite,
+.navbar__btns .basket {
+  display: flex;
+  padding-left: 10px;
+  cursor: pointer;
+}

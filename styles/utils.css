@@ -2,5 +2,5 @@
 .container {
   margin: 0 auto; /* Centrarea blocului in mijlocul paginii */
   max-width: 1500px; /* La dimensiuni mari ale ecranului, pastreaza max-width */
-  width: 80%; /* Ca sa nu mai avem nevoie sa setam un padding fix */
+  width: 90%; /* Ca sa nu mai avem nevoie sa setam un padding fix */
 }

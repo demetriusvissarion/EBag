@@ -1,0 +1,29 @@
+/* ----- Footer ----- */
+
+/* Footerul o sa se dea in jos atunci cand avem content in pagina */
+
+.footer {
+  background-color: lightgray;
+  padding: 2rem 0; /* Avem nevoie de spatiu doar sus si jos, in laterale avem deja */
+}
+
+.footer__columns {
+  display: flex; /* ca sa pot folosi justify */
+  justify-content: space-between; /* Ca sa am acelasi spatiu intre elemente(coloane) */
+}
+
+.footer__column {
+  list-style: none; /* Sa scapam de bullet points */
+  padding: 0; /* ul are padding default */
+  margin: 0; /* ul are margin default */
+  display: inline-block; /* Am facut coloanele sa fie blocuri, altfel le punea una sub alta si fiecare linie de text lua toata linia */
+}
+
+/* Copyright */
+
+.copyright {
+  text-align: center; /* Centreaza textul */
+  margin: 0;
+  background-color: #c4c4c4;
+  color: rgb(4, 4, 4);
+}

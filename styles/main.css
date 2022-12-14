@@ -1,0 +1,16 @@
+:root {
+  --body-bg: #cdcde9;
+}
+
+body {
+  margin: 0;
+  background-color: var(--body-bg);
+}
+
+/* ----- Test content (remove later) ----- */
+
+.test-content {
+  height: 1000px;
+  text-align: center;
+  line-height: 1000px;
+}

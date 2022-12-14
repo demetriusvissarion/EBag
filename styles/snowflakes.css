@@ -1,0 +1,15 @@
+/* winter snowfleakes effect, to comment out after winter */
+.fa-snowflake {
+  animation: fall 10s linear forwards;
+  color: white;
+  position: absolute;
+  top: -20px;
+
+  z-index: 999;
+}
+
+@keyframes fall {
+  to {
+    transform: translateY(105vh);
+  }
+}
